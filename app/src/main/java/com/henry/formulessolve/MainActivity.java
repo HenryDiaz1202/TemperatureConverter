@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void celciusW(View view) {
+        Intent i = new Intent(this, CelciusLayout.class );
+        startActivity(i);
+    }
+
+    public void fahrenheitW(View view) {
         Intent i = new Intent(this, CelciusLayout.class );
         startActivity(i);
     }

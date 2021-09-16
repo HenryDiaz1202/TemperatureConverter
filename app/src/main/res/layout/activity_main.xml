@@ -270,6 +270,7 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
+                android:onClick="fahrenheitW"
                 android:text="@string/headd3"
                 android:textColor="#FAF6F6"
                 android:textSize="19sp"
