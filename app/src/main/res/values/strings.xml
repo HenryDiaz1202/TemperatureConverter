@@ -7,5 +7,8 @@
     <string name="headd4">Temperatura Kelvin</string>
     <string name="headd5">Temperatura Rankine</string>
     <string name="headd6">Temperatura Réaumur</string>
+    <string name="title_activity_fahrenheir_layout">FahrenheirLayout</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 
 </resources>
