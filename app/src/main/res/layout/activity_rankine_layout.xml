@@ -162,7 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:onClick="KtoC"
+                    android:onClick="CtoRK"
                     android:text="Celcius"
                     android:textStyle="bold" />
 
@@ -171,7 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:onClick="KtoF"
+                    android:onClick="FtoRK"
                     android:text="Fahrenheit"
                     android:textStyle="bold" />
 
@@ -189,7 +189,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:onClick="KToRM"
+                    android:onClick="RMToRK"
                     android:text="Réaumur"
                     android:textStyle="bold" />
             </RadioGroup>
