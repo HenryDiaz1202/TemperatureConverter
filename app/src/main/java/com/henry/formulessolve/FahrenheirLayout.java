@@ -9,12 +9,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.text.DecimalFormat;
 
 public class FahrenheirLayout extends AppCompatActivity {
 
     EditText valor;
-    double datV, res;
-    String frmt;
+    double datV, res, resta,multiplicar;
+    String frmt,restaFRM,multiplicarFR;
     TextView infMs, resultado, formule;
     RadioButton rd1, rd2, rd3, rd4;
 
@@ -60,22 +63,115 @@ public class FahrenheirLayout extends AppCompatActivity {
     }
 
     //DE FAHRENHEIT A CELCIUS
-    public void clss(){}
+    public void clss(){
+        try {
+            infMs.setText("Valor en Celcius");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = ((9*datV)/5)+32;
+            frmt = new DecimalFormat("##.###").format(res)+" F";
+            resultado.setText(frmt);
+
+            formule.setText("F=(9C°/5) + 32 \n\n " +
+                    "Sustituimos \n\n"+"F= ((9 * "+datV+") / 5) + 32\n" +
+                    "F= ("+(9*datV)+"/5) + 32\n\n " +
+                    "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 5\n\n" +
+                    "Entonces, primer valor 5/5 = 1 => 1 x "+(9*datV) + " = "+(9*datV)+"\n\n" +
+                    "Segundo valor, 5/1 = 5 => 5 * 32 = "+(5*32)+"\n\n" +
+                    "Nos queda lo siguiente\n\n" +
+                    "F = ("+(9*datV)+" + "+(5*32)+") / 5\n" +
+                    "F= ("+((9*datV)+(5*32))+") / 5\n" +
+                    "F = "+frmt);
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
+    }
     public void FtoC(View view) {
+        clss();
     }
 
     //DE FAHRENHEIT A KELVIN
-    public void klvn(){}
+    public void klvn(){
+        try {
+            infMs.setText("Valor en Kelvin");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = (9*(datV - 273.15)/5)+32;
+            frmt = new DecimalFormat("##.###").format(res)+" F";
+            resultado.setText(frmt);
+
+            resta = (datV - 273.15);
+            restaFRM = new DecimalFormat("##.###").format(resta);
+            multiplicar = (9 * resta);
+            multiplicarFR  = new DecimalFormat("##.###").format(multiplicar);
+
+
+            formule.setText("F=9(K - 273.15)/5 + 32 \n\n " +
+                    "Sustituimos \n\n"+"F= 9("+datV+" - 273.15)/5 + 32\n" +
+                    "F= 9("+restaFRM+")/5 + 32\n" +"F= ("+multiplicarFR+")/5 + 32\n\n"+
+                    "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 5\n\n" +
+                    "Entonces, primer valor 5/5 = 1 => 1 x "+multiplicarFR + " = "+multiplicarFR+"\n\n" +
+                    "Segundo valor, 5/1 = 5 => 5 * 32 = "+(5*32)+"\n\n" +
+                    "Nos queda lo siguiente\n\n" +
+                    "F = ("+multiplicarFR+" + "+(5*32)+") / 5\n" +
+                    "F= ("+(multiplicar + (5*32))+") / 5\n" +
+                    "F = "+frmt);
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
+    }
     public void FtoK(View view) {
+        klvn();
     }
 
     //DE FAHRENHEIT A RANKIO
-    public void rank(){}
+    public void rank(){
+        try {
+            infMs.setText("Valor en Rankine");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = (datV - 459.67);
+            frmt = new DecimalFormat("##.###").format(res)+" F";
+            resultado.setText(frmt);
+
+            formule.setText("F=RK - 459.67 \n\n " +
+                    "Sustituimos \n\n"+
+                    "F= "+datV+" - 459.67\n" +
+                    "F = "+frmt);
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
+    }
     public void FtoRk(View view) {
+        rank();
     }
 
     //DE FAHRENHEIT A RÉAUMUR
-    public void remr(){}
+    public void remr(){
+        try {
+            infMs.setText("Valor en Réaumur");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = ((9*datV)/4)+32;
+            frmt = new DecimalFormat("##.###").format(res)+" F";
+            resultado.setText(frmt);
+
+            formule.setText("F=(9RE/4) + 32 \n\n " +
+                    "Sustituimos \n\n"+"F= ((9 * "+datV+") / 4) + 32\n" +
+                    "F= ("+(9*datV)+"/4) + 32\n\n " +
+                    "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 4\n\n" +
+                    "Entonces, primer valor 4/4 = 1 => 1 x "+(9*datV) + " = "+(9*datV)+"\n\n" +
+                    "Segundo valor, 4/1 = 4 => 54 * 32 = "+(4*32)+"\n\n" +
+                    "Nos queda lo siguiente\n\n" +
+                    "F = ("+(9*datV)+" + "+(4*32)+") / 4\n" +
+                    "F= ("+((9*datV)+(4*32))+") / 4\n" +
+                    "F = "+frmt);
+
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
+    }
     public void FToRM(View view) {
+        remr();
     }
 }
