@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-       <!-- <activity
+        <activity
+            android:name=".RankineLayout"
+            android:exported="true" />
+        <activity
             android:name=".KelvinLayout"
-            android:exported="true" />-->
+            android:exported="true" />
         <activity
             android:name=".FahrenheirLayout"
             android:exported="true" />
@@ -19,7 +22,7 @@
             android:name=".CelciusLayout"
             android:exported="true" />
         <activity
-            android:name=".KelvinLayout"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, FahrenheirLayout.class );
         startActivity(i);
     }
+
+    public void kelvinW(View view) {
+        Intent i = new Intent(this, KelvinLayout.class );
+        startActivity(i);
+    }
 }
