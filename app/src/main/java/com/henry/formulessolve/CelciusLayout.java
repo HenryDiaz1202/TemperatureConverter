@@ -31,7 +31,7 @@ public class CelciusLayout extends AppCompatActivity {
         infMs = findViewById(R.id.idInfo);
         resultado = findViewById(R.id.idRes1);
         formule = findViewById(R.id.idFormule);
-        rd1 = findViewById(R.id.idRBFH);
+        rd1 = findViewById(R.id.idRBCS);
         rd2 = findViewById(R.id.idRBKV);
         rd3 = findViewById(R.id.idRBRK);
         rd4 = findViewById(R.id.idRBRM);
