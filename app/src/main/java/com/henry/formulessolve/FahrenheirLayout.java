@@ -160,7 +160,7 @@ public class FahrenheirLayout extends AppCompatActivity {
                     "F= ("+(9*datV)+"/4) + 32\n\n " +
                     "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 4\n\n" +
                     "Entonces, primer valor 4/4 = 1 => 1 x "+(9*datV) + " = "+(9*datV)+"\n\n" +
-                    "Segundo valor, 4/1 = 4 => 54 * 32 = "+(4*32)+"\n\n" +
+                    "Segundo valor, 4/1 = 4 => 4 * 32 = "+(4*32)+"\n\n" +
                     "Nos queda lo siguiente\n\n" +
                     "F = ("+(9*datV)+" + "+(4*32)+") / 4\n" +
                     "F= ("+((9*datV)+(4*32))+") / 4\n" +

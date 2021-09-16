@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fahrenheitW(View view) {
-        Intent i = new Intent(this, CelciusLayout.class );
+        Intent i = new Intent(this, FahrenheirLayout.class );
         startActivity(i);
     }
 }

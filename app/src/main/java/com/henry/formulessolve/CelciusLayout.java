@@ -151,6 +151,4 @@ public class CelciusLayout extends AppCompatActivity {
         remr();
     }
 
-
-
 }
