@@ -16,8 +16,8 @@ import java.text.DecimalFormat;
 public class RankineLayout extends AppCompatActivity {
 
     EditText valor;
-    double datV, res;
-    String frmt;
+    double datV, res, resta,multiplicar;
+    String frmt,restaFRM,multiplicarFR;
     TextView infMs, resultado, formule;
     RadioButton rd1, rd2, rd3, rd4;
 
@@ -66,6 +66,33 @@ public class RankineLayout extends AppCompatActivity {
     }
 
     public void klvn() {
+        try {
+            infMs.setText("Valor en Kelvin");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = (9*(datV - 273.15)/5)+491.67;
+            frmt = new DecimalFormat("##.###").format(res)+" F";
+            resultado.setText(frmt);
+
+            resta = (datV - 273.15);
+            restaFRM = new DecimalFormat("##.###").format(resta);
+            multiplicar = (9 * resta);
+            multiplicarFR  = new DecimalFormat("##.###").format(multiplicar);
+
+
+            formule.setText("F=9(K - 273.15)/5 + 491.67 \n\n " +
+                    "Sustituimos \n\n"+"F= 9("+datV+" - 273.15)/5 + 491.67\n" +
+                    "F= 9("+restaFRM+")/5 + 491.67\n" +"F= ("+multiplicarFR+")/5 + 491.67\n\n"+
+                    "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 5\n\n" +
+                    "Entonces, primer valor 5/5 = 1 => 1 x "+multiplicarFR + " = "+multiplicarFR+"\n\n" +
+                    "Segundo valor, 5/1 = 5 => 5 * 491.67 = "+(5*491.67)+"\n\n" +
+                    "Nos queda lo siguiente\n\n" +
+                    "F = ("+multiplicarFR+" + "+(5*491.67)+") / 5\n" +
+                    "F= ("+(multiplicar + (5*491.67))+") / 5\n" +
+                    "F = "+frmt);
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void fah() {

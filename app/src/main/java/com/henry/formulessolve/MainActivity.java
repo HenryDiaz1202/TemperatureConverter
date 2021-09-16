@@ -29,4 +29,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, KelvinLayout.class );
         startActivity(i);
     }
+
+    public void rankineW(View view) {
+        Intent i = new Intent(this, RankineLayout.class );
+        startActivity(i);
+    }
+    /*
+    public void reamureW(View view) {
+        Intent i = new Intent(this, RankineLayout.class );
+        startActivity(i);
+    }*/
 }
