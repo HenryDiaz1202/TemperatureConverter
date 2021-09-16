@@ -63,6 +63,28 @@ public class RankineLayout extends AppCompatActivity {
     }
 
     public void remr() {
+        try {
+            infMs.setText("Valor en Réaumur");
+            datV = Double.parseDouble(valor.getText().toString());
+            res = ((9*datV)/4)+491.67;
+            frmt = new DecimalFormat("##.###").format(res)+" RK";
+            resultado.setText(frmt);
+
+            formule.setText("RK=(9RE/4) + 491.67 \n\n " +
+                    "Sustituimos \n\n"+"RK= ((9 * "+datV+") / 4) + 491.67\n" +
+                    "RK= ("+(9*datV)+"/4) + 491.67\n\n " +
+                    "Sacamos el mínimo común múltiplo (mcm), en este caso siempre es 4\n\n" +
+                    "Entonces, primer valor 4/4 = 1 => 1 x "+(9*datV) + " = "+(9*datV)+"\n\n" +
+                    "Segundo valor, 4/1 = 4 => 4 * 491.67 = "+(4*491.67)+"\n\n" +
+                    "Nos queda lo siguiente\n\n" +
+                    "RK= ("+(9*datV)+" + "+(4*491.67)+") / 4\n" +
+                    "RK= ("+((9*datV)+(4*491.67))+") / 4\n" +
+                    "RK= "+frmt);
+
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void klvn() {
@@ -86,9 +108,9 @@ public class RankineLayout extends AppCompatActivity {
                     "Entonces, primer valor 5/5 = 1 => 1 x "+multiplicarFR + " = "+multiplicarFR+"\n\n" +
                     "Segundo valor, 5/1 = 5 => 5 * 491.67 = "+(5*491.67)+"\n\n" +
                     "Nos queda lo siguiente\n\n" +
-                    "F = ("+multiplicarFR+" + "+(5*491.67)+") / 5\n" +
+                    "F= ("+multiplicarFR+" + "+(5*491.67)+") / 5\n" +
                     "F= ("+(multiplicar + (5*491.67))+") / 5\n" +
-                    "F = "+frmt);
+                    "F= "+frmt);
 
         }catch (Exception e){
             Toast.makeText(getApplicationContext(), "Debes ingresar un valor.", Toast.LENGTH_SHORT).show();
