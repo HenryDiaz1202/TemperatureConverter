@@ -47,7 +47,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:drawable/button_onoff_indicator_off">
+                    android:background="#424343">
 
                     <TextView
                         android:id="@+id/textView5"
@@ -55,7 +55,7 @@
                         android:layout_height="47dp"
                         android:layout_marginStart="24dp"
                         android:text="°Celcius"
-                        android:textColor="#FF6D00"
+                        android:textColor="#FDFCFB"
                         android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
