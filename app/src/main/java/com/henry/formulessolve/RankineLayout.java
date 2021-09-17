@@ -59,7 +59,6 @@ public class RankineLayout extends AppCompatActivity {
 
             }
         });
-
     }
 
     public void remr() {

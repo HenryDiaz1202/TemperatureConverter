@@ -199,7 +199,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Convertir de Fahrenheit a :"
+                android:text="Convertir a Fahrenheit :"
                 android:textAlignment="viewStart"
                 android:textColor="#545555"
                 android:textSize="21sp"
