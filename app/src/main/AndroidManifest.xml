@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <!--<activity
+        <activity
             android:name=".ReaumurLayout"
-            android:exported="true" />-->
+            android:exported="true" />
         <activity
             android:name=".RankineLayout"
             android:exported="true" />
@@ -25,7 +25,7 @@
             android:name=".CelciusLayout"
             android:exported="true" />
         <activity
-            android:name=".ReaumurLayout"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
