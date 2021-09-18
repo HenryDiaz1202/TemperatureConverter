@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">FormulesSolve</string>
+    <string name="app_name">FormulesSolveTemperature</string>
     <string name="headd">Conversión de</string>
     <string name="headd1">temperaturas</string>
     <string name="headd2">☼ Temperatura Celcius</string>
-    <string name="headd3">→ Temperatura Fahrenhait</string>
+    <string name="headd3">→ Temperatura Fahrenheit</string>
     <string name="headd4">☼ Temperatura Kelvin</string>
     <string name="headd5">→ Temperatura Rankine</string>
     <string name="headd6">☼ Temperatura Réaumur</string>
