@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="#052430"
     tools:context=".KelvinLayout">
 
     <androidx.cardview.widget.CardView
@@ -17,7 +17,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#d9c023">
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -47,7 +48,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#424343">
+                    android:background="#d9c323">
 
                     <TextView
                         android:id="@+id/textView5"
@@ -55,8 +56,9 @@
                         android:layout_height="47dp"
                         android:layout_marginStart="24dp"
                         android:text="Kelvin"
-                        android:textColor="#FAFAFA"
+                        android:textColor="#fdfdfe"
                         android:textSize="30sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -153,7 +155,7 @@
                 android:layout_height="193dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:background="#304FFE"
+                android:background="#173544"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7">
 
@@ -201,7 +203,7 @@
                 android:layout_marginStart="16dp"
                 android:text="Convertir a Kelvin  :"
                 android:textAlignment="viewStart"
-                android:textColor="#F1D440"
+                android:textColor="#fff"
                 android:textSize="21sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
