@@ -1,6 +1,6 @@
 # TemperatureConverter
 
-![](images/ft1.jpg)
+![](images/img1.jpg)
 
-![](images/ft2.jpg)
+![](images/img2.jpg)
 
