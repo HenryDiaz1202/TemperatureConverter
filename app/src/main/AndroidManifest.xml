@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".Information_layout"
+            android:exported="false" />
+        <activity
             android:name=".ReaumurLayout"
             android:exported="true" />
         <activity
