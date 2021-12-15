@@ -51,9 +51,9 @@
         android:id="@+id/Celcius"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         android:onClick="celciusW"
         app:cardBackgroundColor="#C63B81F8"
         app:cardCornerRadius="20dp"
@@ -101,9 +101,9 @@
         android:id="@+id/kelvin"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         android:onClick="kelvinW"
         app:cardBackgroundColor="#C63B81F8"
         app:cardCornerRadius="20dp"
@@ -151,9 +151,9 @@
         android:id="@+id/rankine"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         android:onClick="rankineW"
         app:cardBackgroundColor="#C63B81F8"
         app:cardCornerRadius="20dp"
@@ -201,9 +201,9 @@
         android:id="@+id/reaumur"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         android:onClick="reamureW"
         app:cardBackgroundColor="#C63B81F8"
         app:cardCornerRadius="20dp"
@@ -250,10 +250,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/fahrenhait"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         app:cardBackgroundColor="#C63B81F8"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -306,7 +306,26 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reaumur"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.994"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/about" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/imageView"
