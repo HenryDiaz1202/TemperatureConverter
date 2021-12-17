@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FormulesSolveTemperature</string>
+    <string name="app_name">Convertidor de temperaturas</string>
     <string name="headd">Conversión de</string>
     <string name="headd1">temperaturas</string>
     <string name="headd2">☼ Temperatura Celcius</string>
@@ -11,5 +11,13 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="title_activity_fahrenheit_layout">FahrenheitLayout</string>
+
+    <string name="infoapp">Convertidor de temperaturas.</string>
+    <string name="infoapp1">☼ →</string>
+    <string name="infoapp2">Es una aplicación que permite a los usuarios hacer conversión de valores en los diferentes tipos de unidades de medida de calor, como son:</string>
+    <string name="infoapp3">Celcius - Fahrenheit - Kelvin - Rankine - Réaumur</string>
+
+    <string name="yt"><u>Poíticas de privacidad</u></string>
+
 
 </resources>
