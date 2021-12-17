@@ -14,6 +14,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
+        android:minHeight="48dp"
         android:onClick="back"
         android:text="← Toda la información"
         android:textColor="#00796B"
@@ -127,7 +128,8 @@
                 android:textAlignment="center"
                 android:textColor="#F84E4E"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
     </ScrollView>
 
