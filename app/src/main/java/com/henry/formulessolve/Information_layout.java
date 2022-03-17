@@ -16,7 +16,7 @@ public class Information_layout extends AppCompatActivity {
     }
 
     public void politicas(View view) {
-        Uri uri = Uri.parse("https://privaity.000webhostapp.com/");
+        Uri uri = Uri.parse("https://intec-120.web.app/politicas.html#convtemperaturas");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }

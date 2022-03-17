@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "184995349887",
+    "project_id": "formulessolve",
+    "storage_bucket": "formulessolve.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184995349887:android:c098969bbf54bd2414c64a",
+        "android_client_info": {
+          "package_name": "com.henry.formulessolve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184995349887-6v87pn8rgmjimecos65ncl7qc7lp7vsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS9XBeqvSEAs1HnsGh119wVK9MOtCPXRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184995349887-6v87pn8rgmjimecos65ncl7qc7lp7vsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,9 +11,15 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.text.DecimalFormat;
 
 public class ReaumurLayout extends AppCompatActivity {
+
+    private static final String TAG = "ReaumurLayout";
+    private AdView mAdView;
 
     EditText valor;
     double datV, res, resta,multiplicar;
@@ -25,6 +31,11 @@ public class ReaumurLayout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reaumur_layout);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         valor = findViewById(R.id.idValorG);
         infMs = findViewById(R.id.idInfo);
