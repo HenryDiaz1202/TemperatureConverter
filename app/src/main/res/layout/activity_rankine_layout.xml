@@ -25,56 +25,39 @@
                 android:id="@+id/imageView5"
                 android:layout_width="59dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginBottom="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/cardView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/calc" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
+            <TextView
+                android:id="@+id/textView5"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="2dp"
-                app:cardCornerRadius="20dp"
+                android:fontFamily="@font/girassol"
+                android:gravity="center_vertical"
+                android:text="Rankine"
+                android:textColor="#fdfdfe"
+                android:textSize="30sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#d9c323">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="145dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="24dp"
-                        android:text="Rankine"
-                        android:textColor="#fdfdfe"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:id="@+id/scrollView5"
-        android:layout_width="409dp"
-        android:layout_height="599dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
@@ -264,14 +247,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="4dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
-        app:layout_constraintVertical_bias="0.978"></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

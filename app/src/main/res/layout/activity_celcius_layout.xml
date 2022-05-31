@@ -25,6 +25,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:fontFamily="@font/girassol"
                 android:gravity="center_vertical"
                 android:text="°Celcius"
                 android:textColor="#fdfdfe"
