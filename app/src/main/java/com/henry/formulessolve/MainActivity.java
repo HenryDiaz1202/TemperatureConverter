@@ -56,4 +56,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Biografias(View view) {
+        Intent i = new Intent(this, BiografiasActivity.class );
+        startActivity(i);
+    }
+
 }

@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">Convertidor de temperaturas</string>
-    <string name="headd">Conversión de</string>
+    <string name="headd">Convertidor de</string>
     <string name="headd1">temperaturas</string>
     <string name="headd2">☼ Temperatura Celcius</string>
-    <string name="headd3">→ Temperatura Fahrenheit</string>
+    <string name="headd3">☼ Temperatura Fahrenheit</string>
     <string name="headd4">☼ Temperatura Kelvin</string>
-    <string name="headd5">→ Temperatura Rankine</string>
+    <string name="headd5">☼ Temperatura Rankine</string>
     <string name="headd6">☼ Temperatura Réaumur</string>
+
+    <string name="headd7">Ver biografías ↓</string>
+    <string name="headd8">Ver biografías</string>
+
     <string name="title_activity_fahrenheir_layout">FahrenheirLayout</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
@@ -20,6 +24,6 @@
     <string name="yt"><u>Poíticas de privacidad</u></string>
 
     <string name="banner_ad_unit_id">ca-app-pub-9651306497503321/4661736873</string>
-
+    <string name="todo">TODO</string>
 
 </resources>
