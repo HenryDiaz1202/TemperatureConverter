@@ -149,7 +149,7 @@ public class KelvinLayout extends AppCompatActivity {
             infMs.setText("Valor en Celcius");
             datV = Double.parseDouble(valor.getText().toString());
             res = datV + 273.15;
-            frmt = new DecimalFormat("##.###").format(res)+" °C";
+            frmt = new DecimalFormat("##.###").format(res)+" K";
             resultado.setText(frmt);
 
             formule.setText("K=C + 273.15 \n\n " +

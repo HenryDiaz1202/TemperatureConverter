@@ -21,6 +21,12 @@ public class Information_layout extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void otras(View view) {
+        Intent intentNavegador = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=henrydiaz"));
+        startActivity(intentNavegador);
+        finish();
+    }
+
     public void back(View view) {
         finish();
     }
